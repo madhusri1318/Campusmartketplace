@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #F5EFEB;
+}
+
+.dashboard {
+  display: flex;
+}
+
+
+.profile-main {
+  flex-grow: 1;
+  padding: 30px;
+  margin-left: 300px;
+  padding: 20px;
+  width: calc(100% - 250px);
+}
+
+.sidebar.collapsed ~ .profile-main {
+  margin-left: 50px;
+  width: calc(100% - 40px);
+}
+
+.profile-card {
+  background: linear-gradient(to bottom right, #F5EFEB, #C8D9E6);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px #00000020;
+  margin-bottom: 30px;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #2F4156;
+}
+
+.edit-btn {
+  padding: 6px 12px;
+  background-color: #567C8D;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.profile-picture {
+  font-size: 60px;
+  background-color: #C8D9E6;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2F4156;
+}
+
+.profile-fields {
+  flex: 1;
+  min-width: 250px;
+}
+
+.profile-fields p {
+  margin: 5px 0;
+  color: #2F4156;
+  font-size: 1rem;
+}
+
+.profile-fields label {
+  display: block;
+  margin: 8px 0;
+  color: #2F4156;
+  font-size: 1rem;
+}
+
+.profile-fields input,
+.profile-fields select {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 4px;
+  width: 100%;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background-color: white;
+  color: #2F4156;
+}
+
+.profile-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 16px;
+  background-color: #C8D9E6;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #2F4156;
+  font-weight: bold;
+}
+
+.tab.active {
+  background-color: #567C8D; /* Teal */
+  color: white;
+}
+
+.tab-content {
+  background-color: white;
+  padding: 25px;
+  border-radius: 16px;
+  min-height: 200px;
+  box-shadow: 0 4px 10px #00000010;
+  color: #2F4156;
+}
+
+.listing-filters {
+  margin-top: 10px;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.listing-btn {
+  padding: 8px 16px;
+  background-color: #C8D9E6;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #2F4156;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.listing-btn.active {
+  background-color: #567C8D; /* Teal */
+  color: white;
+}
+
+.listing-results {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px #00000010;
+  color: #2F4156;
+}

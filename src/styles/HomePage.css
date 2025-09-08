@@ -1,0 +1,232 @@
+/* General Page Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f5f5f5, #d6e4ef);
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.navbar-links a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.navbar-links a:hover {
+  color: #0077b6;
+}
+
+.login-button {
+  padding: 8px 20px;
+  border-radius: 20px;
+  background-color: #c9dff4;
+  border: none;
+  font-weight: bold;
+  color: #2c3e50;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #aacde8;
+}
+
+/* Homepage Main Section */
+.homepage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 80px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.homepage-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.homepage-content h1 {
+  font-size: 48px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.homepage-content p {
+  font-size: 18px;
+  color: #547b8a;
+  margin-bottom: 30px;
+}
+
+.shop-now {
+  padding: 14px 32px;
+  background-color: #4f7689;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.shop-now:hover {
+  background-color: #3c5f6e;
+}
+
+/* Info Box */
+.info-box {
+  flex: 1;
+  min-width: 300px;
+  background-color: white;
+  padding: 40px 20px;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.icons img {
+  width: 60px;
+  height: 60px;
+  background-color: #d3e3f1;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.info-box h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.info-box p {
+  font-size: 16px;
+  color: #547b8a;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* About Section */
+.about-section {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 18px;
+  color: #547b8a;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  margin-bottom: 30px;
+
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #f0f6fa;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 18px;
+  color: #547b8a;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #4f7689;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #3c5f6e;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #2c3e50;
+  text-align: center;
+  padding: 20px 0;
+  color: #ffffff;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+}
+
+.footer p {
+  margin: 0;
+}

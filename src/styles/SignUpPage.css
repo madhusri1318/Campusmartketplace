@@ -1,0 +1,147 @@
+.signup-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4ebe4;
+}
+
+
+.signup-container {
+  display: flex;
+  height: 100vh;
+  background: #f9f4f0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.signup-left {
+  flex: 1;
+  background: #f9f4f0;
+  padding: 4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup-left img {
+  max-width: 80%;
+  margin: 0 auto 2rem;
+}
+
+.signup-left h2 {
+  font-size: 1.8rem;
+  color: #2f4156;
+  margin-bottom: 1rem;
+}
+
+.signup-left p {
+  font-size: 1rem;
+  color: #5f7285;
+}
+
+.signup-right {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 1rem 0 0 1rem;
+  padding: 4rem;
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup-form {
+  max-width: 400px;
+  margin: auto;
+}
+
+.signup-form h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #2f4156;
+}
+
+.signup-form p {
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  color: #768a9d;
+}
+
+.signup-form label {
+  font-size: 0.9rem;
+  color: #2f4156;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.2rem;
+  border: 1.5px solid #dce3ea;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #2f4156;
+}
+
+.signup-form input:focus {
+  border-color: #00a3a3;
+  outline: none;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  color: #2f4156;
+}
+
+.checkbox-group input {
+  margin-right: 0.6rem;
+}
+
+.checkbox-group a {
+  color: #007a7a;
+  text-decoration: none;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #c8dfee;
+  border: none;
+  border-radius: 999px;
+  font-weight: bold;
+  color: #2f4156;
+  font-size: 1rem;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #007a7a;
+  color: white;
+}
+
+.signup-form button:disabled {
+  background-color: #eee;
+  cursor: not-allowed;
+}
+
+.signin-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #5f7285;
+}
+
+.signin-link span {
+  color: #007a7a;
+  cursor: pointer;
+  text-decoration: underline;
+}

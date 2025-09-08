@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #F5EFEB; /* Beige */
+}
+
+.dashboard {
+  display: flex;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 30px;
+  margin-left: 300px;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sidebar.collapsed ~ .main {
+  margin-left: 50px;
+  width: calc(100% - 40px);
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #567C8D; /* Teal */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.search-bar select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #C8D9E6; /* Sky Blue */
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  padding: 10px;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

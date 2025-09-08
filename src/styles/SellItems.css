@@ -1,0 +1,190 @@
+body, h2, label, input, select, textarea, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe3d8;
+  padding: 2rem;
+  margin-left: 290px;
+  width: calc(100% - 250px);
+}
+
+.sidebar.collapsed ~ .main-content {
+  margin-left: 50px;
+  width: calc(100% - 40px);
+}
+
+.form-wrapper {
+  background: #fff;
+  border: 2px solid #fbb;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 700px;
+}
+
+.form-title {
+  font-size: 1.8rem;
+  color: #333;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.sell-form .form-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1px solid #aaa;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background: #fff;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.drop-area {
+  border: 2px dashed #aaa;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.drop-area.active {
+  background-color: #eef6ff;
+  border-color: #5b9bd5;
+}
+
+.select-btn {
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.select-btn:hover {
+  background-color: #e0f0ff;
+}
+
+.file-note {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+.preview-image {
+  max-width: 100%;
+  max-height: 200px;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.ai-generate {
+  margin-top: 0.5rem;
+  padding: 0.4rem 1rem;
+  background-color: #ffc0cb;
+  color: #333;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.ai-generate:hover {
+  background-color: #fba3ba;
+}
+
+select {
+  cursor: pointer;
+}
+
+.checkbox-group {
+  display: flex;
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+
+.checkbox-group label {
+  font-weight: 500;
+  color: #444;
+}
+
+.upload-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #33aaff;
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.upload-button:hover {
+  background-color: #1c8ed8;
+}
+.image-preview-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.remove-btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: #fcfafa;
+  color: rgb(2, 2, 2);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 4px rgba(74, 72, 72, 0.2);
+  transition: background 0.2s;
+}
+
+.remove-btn:hover {
+  background: #d82c2c;
+}
